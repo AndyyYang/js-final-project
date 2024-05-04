@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Foods Galore",
+        "location": "1111 West St. Oshkosh WI, 54901",
+        "dates": "6/15/25",
+        "hours": "12pm - 3pm"
+    },
+    {
+        "name": "Food in Trucks?!",
+        "location": "1234 North St. Appleton WI, 54911",
+        "dates": "6/15/25",
+        "hours": "3pm - 9pm"
+    },
+    {
+        "name": "Tasty Tasty Food",
+        "location": "777 South St. Wausau WI, 54403",
+        "dates": "6/15/25",
+        "hours": "1pm - 9pm"
+    }
+]
