@@ -11,8 +11,20 @@ body {
     border: 2px solid black;
 }
 
+header {
+    background-color: #092834;
+    text-align: center;
+}
+
+header img {
+    object-fit: contain;
+    width: 1000px;
+    height: auto;
+}
+
 nav {
     display: flex;
+    flex-wrap: wrap;
     min-height: 40px;
     background-color: #092834;
 }
@@ -27,8 +39,13 @@ nav a {
     font-size: 150%;
     text-decoration: none;
     padding-right: 30px;
+    font-family: "Luckiest Guy", cursive;
+    font-style: normal;
 }
 
 h1 {
     text-align: center;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
