@@ -27,8 +27,13 @@ nav a {
     font-size: 150%;
     text-decoration: none;
     padding-right: 30px;
+    font-family: "Luckiest Guy", cursive;
+    font-style: normal;
 }
 
 h1 {
     text-align: center;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
