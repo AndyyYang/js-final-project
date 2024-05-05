@@ -106,19 +106,36 @@ p {
 /* menu */
 .menu {
     display: flex;
-    padding-right: 40px;
+    width: 100%;
+    margin-left: -15px;
 }
 
-.menu ul:first-child {
-    flex: 33%;
+.menu ul {
+    list-style-type: none;
 }
 
-.menu ul:nth-child(2) {
-    flex: 33%;
+.menu ul li:first-child {
+    width: 32%;
+    float: left;
+    border: 1px solid #1489B8;
+    margin-right: 1%;
 }
 
-.menu ul:last-child {
-    flex: 33%;
+.menu ul li:nth-child(2) {
+    width: 32%;
+    float: right;
+    border: 1px solid #1489B8;
+}
+
+.menu ul li:nth-child(3) {
+    width: 33%;
+    float: right;
+    border: 1px solid #1489B8;
+    margin-right: 1%;
+}
+
+.menu img {
+    margin-left: 28px;
 }
 
 /* contact */
