@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Kimchi Jjigae",
+        "description": "A spicy and hearty Korean stew made with kimchi, pork or tofu, onions, and tofu, often served bubbling hot.",
+        "price": "$14.99"
+    },
+    {
+        "name": "Kimchi Fried Rice",
+        "description": "A flavorful Korean dish where cold cooked rice is stir-fried with kimchi, vegetables, and often topped with a fried egg",
+        "price": "$12.99"
+    },
+    {
+        "name": "Bibimbap",
+        "description": "A signature Korean dish consisting of a bowl of warm white rice topped with seasoned vegetables, chili pepper paste, a raw or fried egg, and sliced meat, all mixed together before eating",
+        "price": "$12.99"
+    }
+]

@@ -8,7 +8,10 @@ body {
     width: 1000px;
     background-color: #F5E1D6;
     margin: auto;
+    padding-bottom: 25px;
     border: 2px solid black;
+    top: 20%;
+    overflow: hidden;
 }
 
 header {
@@ -43,9 +46,62 @@ nav a {
     font-style: normal;
 }
 
+nav a:hover {
+    color: #1489B8;
+}
+
 h1 {
     text-align: center;
     font-family: "Luckiest Guy", cursive;
     font-weight: 400;
+    font-style: normal;
+    color: #092834;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 200;
+    font-style: normal;
+    color: #092834;
+}
+
+.contactp p {
+    font-family: "Luckiest Guy", cursive;
+    font-style: normal;
+    padding-left: 2%;
+}
+
+.contactp p:first-child {
+    text-align: center;
+}
+
+.contactp p:nth-child(2) {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+.message {
+    padding-top: 20px;
+}
+
+#textbox {
+    height: 150px;
+    width: 500px;
+
+}
+
+#submit {
+    margin-left: 20px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    padding-top: 20px;
+    font-family: "Luckiest Guy", cursive;
     font-style: normal;
 }
