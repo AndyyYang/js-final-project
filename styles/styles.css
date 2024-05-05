@@ -67,12 +67,17 @@ h2, h3 {
     color: #092834;
 }
 
+article a {
+    text-decoration: none;
+}
+
 p {
     font-family: "Luckiest Guy", cursive;
     font-style: normal;
     padding-left: 2%;
 }
 
+/* Index */
 .welcome {
     display: flex;
     font-size: 125%;
@@ -98,6 +103,25 @@ p {
     border: 2px solid black;
 }
 
+/* menu */
+.menu {
+    display: flex;
+    padding-right: 40px;
+}
+
+.menu ul:first-child {
+    flex: 33%;
+}
+
+.menu ul:nth-child(2) {
+    flex: 33%;
+}
+
+.menu ul:last-child {
+    flex: 33%;
+}
+
+/* contact */
 .contactp p:first-child {
     text-align: center;
 }
