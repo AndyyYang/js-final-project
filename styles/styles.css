@@ -2,6 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: #1489B8;
+    overflow-x: hidden;
 }
 
 #wrapper {
@@ -11,7 +12,6 @@ body {
     padding-bottom: 25px;
     border: 2px solid black;
     top: 20%;
-    overflow: hidden;
 }
 
 header {
