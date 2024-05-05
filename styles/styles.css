@@ -70,19 +70,32 @@ h2, h3 {
 p {
     font-family: "Luckiest Guy", cursive;
     font-style: normal;
+    padding-left: 2%;
+}
+
+.welcome {
+    display: flex;
+    font-size: 125%;
+    margin-top: -40px;
 }
 
 .indexart {
-    display: flex;
+    margin-top: -50px;
+    text-align: center;
 }
 
-.one {
-    flex: 50%;
+.one, .two {
+    flex: 25%;
     padding: 50px;
 }
 
-.contactp p {
-    padding-left: 2%;
+.one {
+    color: #1489B8;
+}
+
+
+.truck {
+    border: 2px solid black;
 }
 
 .contactp p:first-child {
@@ -115,5 +128,8 @@ footer {
     position: absolute;
     width: 100%;
     padding-top: 20px;
-    clear: both;;
+}
+
+footer p {
+    padding-left: 0px;
 }
