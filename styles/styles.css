@@ -151,6 +151,10 @@ form {
     text-align: center;
 }
 
+.invalid {
+    border: 1px solid red;
+}
+
 .message {
     padding-top: 20px;
 }
@@ -165,6 +169,22 @@ form {
     margin-left: 20px;
 }
 
+/* admin */
+.admin {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.editor1, .editor2 {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+}
+
+.editor1 form {
+    padding-bottom: 10px;
+}
+
+/* footer */
 footer {
     position: absolute;
     width: 100%;

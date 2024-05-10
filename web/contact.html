@@ -37,19 +37,43 @@
                 </p>
                 <h2>Contact Form</h2>
                 <form>
-                    <input type="text" name="firstname" id="firstname" placeholder="first name" required />
-                    <input type="text" name="lastname" id="lastname" placeholder="last name" required>
-                    <input type="email" name="email" id="email" placeholder="email">
-                    <input type="tel" name="phone" id="phone" placeholder="phone" required>
+                    <input type="text" name="firstname" id="firstname" placeholder="*first name" required />
+                    <input type="text" name="lastname" id="lastname" placeholder="*last name" required>
+                    <input type="email" name="email" id="email" placeholder="*email">
+                    <input type="tel" name="phone" id="phone" placeholder="*phone" required>
                 </form>
                 <form class="message">
                     <textarea name="textbox" id="textbox" placeholder="maximum 250 char..."  maxlength="250"></textarea>
                     <input type="submit" id="submit" value="submit">
                 </form>
+                <script>
+                    const checkFormValidity = () => {
+                        const isValid = selector => document.querySelector(`#${selector}`).checkValidity()
+                        return [ 'firstname', 'lastname', 'email', 'phone' ].every(isValid)
+                    }
+
+                    const submitButton = document.querySelector('#submit')
+                    submitButton.disabled = true
+
+                    const allInputs = document.querySelectorAll('input')
+                    allInputs.forEach(element => {
+
+                        if (element.type === 'submit') return
+                        element.classList.add('invalid')
+
+                        element.addEventListener('input', () => {
+                            element.checkValidity()
+                            const { valid } = element.validity
+                            element.classList.toggle('invalid', !valid)
+            
+                        submitButton.disabled = !checkFormValidity()   
+                        })
+                    })
+                </script>
             </section>
-                <footer>
-                    <p><small>&copy;2024 AHA Food Truck, Inc.</small></p>
-                </footer>
+            <footer>
+                <p><small>&copy;2024 AHA Food Truck, Inc.</small></p>
+            </footer>
         </div>
     </body>
 </html>
