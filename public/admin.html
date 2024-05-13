@@ -24,9 +24,9 @@
                     <h1>Menu Editor</h1>
                     <h2>New Dish</h2>
                         <form id="addFood">
-                            <input type="text" name="name" placeholder="Dish Name" required>
-                            <input type="text" name="description" placeholder="Description" required>
-                            <input type="text" name="price" placeholder="Price" required>
+                            <input type="text" id="fName" name="fName" placeholder="Dish Name" required>
+                            <input type="text" id="fDescription" name="fDescription" placeholder="Description" required>
+                            <input type="text" id="fPrice" name="fPrice" placeholder="Price" required>
                             <button type="submit">Add Dish</button>
                         </form>
                     <h2>Edit Dish</h2>
@@ -34,18 +34,15 @@
                             <select id="foodSelector" onchange="populateEventFields(this.value)">
                                 <!-- Options populated dynamically -->
                             </select>
-                            <input type="text" name="name" placeholder="Dish Name">
-                            <input type="text" name="description" placeholder="Description" required>
-                            <input type="text" name="price" placeholder="Price">
+                            <input type="text" name="fname" placeholder="Dish Name">
+                            <input type="text" name="fdescription" placeholder="Description" required>
+                            <input type="text" name="fprice" placeholder="Price">
                             <button type="submit">Update Dish</button>
                         </form>
                     <h2>Delete Dish</h2>
-                        <form id="deleteFood">
-                            <select name="id">
-                                
-                            </select>
-                            <button type="submit">Delete Dish</button>
-                        </form>
+                        <div id="menuItems">
+                        <ul>
+                        </ul>
                 <div class="editor2">
                     <h1>Events Editor</h1>
                     <h2>New Event</h2>

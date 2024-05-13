@@ -1,7 +1,7 @@
 ### Variables
 @port = 3000
 
-@id = 66428160575fd8e4917b0e48
+@id = 664290a4754b51535a3ecab6
 
 ### FOODS (Menu) Endpoints ###
 ### Get Food
@@ -10,13 +10,7 @@ GET http://localhost:{{port}}/api/Food
 
 ### Create new Food
 POST http://localhost:{{port}}/api/Food
-Content-Type: application/json
 
-{
-    "name": "New Food",
-    "description": "New Food",
-    "price": "New Food"
-}
 
 ### Update a Food
 PUT http://localhost:{{port}}/api/Food/{{id}}
