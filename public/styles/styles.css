@@ -1,0 +1,204 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #1489B8;
+    overflow-x: hidden;
+}
+
+#wrapper {
+    width: 1000px;
+    background-color: #F5E1D6;
+    margin: auto;
+    padding-bottom: 25px;
+    border: 2px solid black;
+    top: 20%;
+}
+
+header {
+    background-color: #092834;
+    text-align: center;
+}
+
+header img {
+    object-fit: contain;
+    width: 1000px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 40px;
+    background-color: #092834;
+}
+
+nav ul {
+    display: flex;
+    margin: auto;
+}
+
+nav a {
+    color:#E78F5F;
+    font-size: 150%;
+    text-decoration: none;
+    padding-right: 30px;
+    font-family: "Luckiest Guy", cursive;
+    font-style: normal;
+}
+
+nav a:hover {
+    color: #1489B8;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-size: 180%;
+    font-style: normal;
+    color: #092834;
+}
+
+h2, h3 {
+    text-align: center;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 200;
+    font-style: normal;
+    color: #092834;
+}
+
+article a {
+    text-decoration: none;
+}
+
+p {
+    font-family: "Luckiest Guy", cursive;
+    font-style: normal;
+    padding-left: 2%;
+}
+
+/* Index */
+.welcome {
+    display: flex;
+    font-size: 125%;
+    margin-top: -40px;
+}
+
+.indexart {
+    margin-top: -50px;
+    text-align: center;
+}
+
+.one, .two {
+    flex: 25%;
+    padding: 50px;
+}
+
+.one {
+    color: #1489B8;
+    border-right: 1px solid #1489B8;
+}
+
+.truck {
+    border: 2px solid black;
+    margin-top: 20px;
+}
+
+/* menu */
+#menuItems ul {
+    list-style-type: none;
+}
+
+#menuItems ul li p {
+    margin: 0;
+}
+
+#menuItems ul li p:nth-child(3n){
+    padding-bottom: 25px;
+}
+
+/* contact */
+.contactp p:first-child {
+    text-align: center;
+}
+
+.contactp p:nth-child(2) {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+.invalid {
+    border: 1px solid red;
+}
+
+.message {
+    padding-top: 20px;
+}
+
+#textbox {
+    height: 150px;
+    width: 500px;
+
+}
+
+#submit {
+    margin-left: 20px;
+}
+
+/* admin */
+.admin {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.admin ul {
+    margin: 10px 10px;
+    padding: 0;
+    text-align: left;
+}
+
+.editor1, .editor2 {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+    padding-bottom: 25px;
+}
+
+.editor1 {
+    border-right: 1px solid #1489B8;
+}
+
+.editor1 p, .editor2 p {
+    margin-top: 50px;
+}
+
+.editor1 p:nth-child(4) {
+    color: blue;
+    margin-left: 25px;
+}
+
+.editor1 p:nth-child(6) {
+    color: red;
+    margin-left: 25px;
+}
+
+.editor2 p:nth-child(4) {
+    color: blue;
+}
+
+.editor2 p:nth-child(6) {
+    color: red;
+}
+
+/* footer */
+footer {
+    position: absolute;
+    width: 100%;
+    padding-top: 20px;
+}
+
+footer p {
+    padding-left: 0px;
+}

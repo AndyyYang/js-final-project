@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Food Truck Name</title>
+        <link rel="stylesheet" href="/styles/styles.css" />
+        <script src="scripts/siteAdmin.js" defer></script>
+        <script src="scripts/site.js" defer></script>
+        <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <img src="/img/ahafoods.jpg" alt="" width="" height="">
+            </header>
+            <nav>
+                <ul><a href="index.html"> Home </a></ul>
+                <ul><a href="menu.html"> Menu</a></ul>
+                <ul><a href="contact.html"> Contact Us</a></ul>
+                <ul><a href="admin.html"> Admin</a></ul>
+            </nav>
+            <section class="admin">
+                <div class="editor1">
+                    <h1>Menu Editor</h1>
+                    <h2>New Dish</h2>
+                        <form id="addFood">
+                            <input type="text" name="name" placeholder="Dish Name" required>
+                            <input type="text" name="description" placeholder="Description" required>
+                            <input type="text" name="price" placeholder="Price" required>
+                            <button type="submit">Add Dish</button>
+                        </form>
+                    <h2>Edit Dish</h2>
+                        <form id="updateFood">
+                            <select id="foodSelector" onchange="populateEventFields(this.value)">
+                                <!-- Options populated dynamically -->
+                            </select>
+                            <input type="text" name="name" placeholder="Dish Name">
+                            <input type="text" name="description" placeholder="Description" required>
+                            <input type="text" name="price" placeholder="Price">
+                            <button type="submit">Update Dish</button>
+                        </form>
+                    <h2>Delete Dish</h2>
+                        <form id="deleteFood">
+                            <select name="id">
+                                
+                            </select>
+                            <button type="submit">Delete Dish</button>
+                        </form>
+                <div class="editor2">
+                    <h1>Events Editor</h1>
+                    <h2>New Event</h2>
+                        <form id="addEvent">
+                            <input type="text" name="title" placeholder="Event Title" required>
+                            <input type="text" name="description" placeholder="Description" required>
+                            <input type="date" name="date" required>
+                            <button type="submit">Add Event</button>
+                        </form>
+                    <h2>Edit Event</h2>
+                        <form id="updateEvent">
+                            <select id="eventSelector" onchange="populateEventFields(this.value)">
+                                <!-- Options populated dynamically -->
+                            </select>
+                            <input type="text" name="title" placeholder="Event Title">
+                            <input type="text" name="description" placeholder="Description" required>
+                            <input type="date" name="date">
+                            <button type="submit">Update Event</button>
+                        </form>
+                    <h2>Delete Event</h2>
+                        <form id="deleteEvent">
+                            <select name="id">
+                                <!-- Options populated dynamically -->
+                            </select>
+                            <button type="submit">Delete Event</button>
+                        </form>
+                </div>
+            </section>
+            <footer>
+                <p><small>&copy;2024 AHA Food Truck, Inc.</small></p>
+            </footer>
+        </div>
+    </body>
+</html>
