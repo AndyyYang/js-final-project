@@ -1,7 +1,7 @@
 ### Variables
 @port = 3000
 
-@id = 664290a4754b51535a3ecab6
+@id = 664394f4e3565dce82e9ef20
 
 ### FOODS (Menu) Endpoints ###
 ### Get Food
@@ -11,16 +11,8 @@ GET http://localhost:{{port}}/api/Food
 ### Create new Food
 POST http://localhost:{{port}}/api/Food
 
-
 ### Update a Food
 PUT http://localhost:{{port}}/api/Food/{{id}}
-Content-Type: application/json
-
-{
-    "name": "Food Update",
-    "description": "Food Update",
-    "price": "Food Update"
-}
 
 ### Delete a Food
 DELETE http://localhost:{{port}}/api/Food/{{id}}
@@ -30,30 +22,14 @@ DELETE http://localhost:{{port}}/api/Food/{{id}}
 ### Get Events show only id and name
 GET http://localhost:{{port}}/api/Events
 
-### Get Events show only id and name
+### Get Events show only id and details of id
 GET http://localhost:{{port}}/api/Events/{{id}}
 
 ### Create new Events
 POST http://localhost:{{port}}/api/Events
-Content-Type: application/json
-
-{
-    "name": "New Event",
-    "location": "New Event",
-    "dates": "New Event",
-    "hours": "New Event"
-}
 
 ### Update Events
 PUT http://localhost:{{port}}/api/Events/{{id}}
-Content-Type: application/json
-
-{
-    "name": "Event Update",
-    "location": "Event Update",
-    "dates": "Event Update",
-    "hours": "Event Update"
-}
 
 ### Delete a Events
 DELETE http://localhost:{{port}}/api/Events/{{id}}

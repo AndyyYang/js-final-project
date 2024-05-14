@@ -4,8 +4,12 @@
         <meta charset="utf-8">
         <title>Food Truck Name</title>
         <link rel="stylesheet" href="/styles/styles.css" />
-        <script src="scripts/siteAdmin.js" defer></script>
-        <script src="scripts/site.js" defer></script>
+        <script src="scripts/deleteFood.js" defer></script>
+        <script src="scripts/addFood.js" defer></script>
+        <script src="scripts/updateFood.js" defer></script>
+        <script src="scripts/deleteEvents.js" defer></script>
+        <script src="scripts/addEvents.js" defer></script>
+        <script src="scripts/updateEvents.js" defer></script>
         <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -31,12 +35,10 @@
                         </form>
                     <h2>Edit Dish</h2>
                         <form id="updateFood">
-                            <select id="foodSelector" onchange="populateEventFields(this.value)">
-                                <!-- Options populated dynamically -->
-                            </select>
-                            <input type="text" name="fname" placeholder="Dish Name">
-                            <input type="text" name="fdescription" placeholder="Description" required>
-                            <input type="text" name="fprice" placeholder="Price">
+                            <select id="foodSelector"></select>
+                            <input type="text" id="editName" name="name" placeholder="Dish Name" required>
+                            <input type="text" id="editDescription" name="description" placeholder="Description" required>
+                            <input type="text" id="editPrice" name="price" placeholder="Price" required>
                             <button type="submit">Update Dish</button>
                         </form>
                     <h2>Delete Dish</h2>
@@ -47,28 +49,25 @@
                     <h1>Events Editor</h1>
                     <h2>New Event</h2>
                         <form id="addEvent">
-                            <input type="text" name="title" placeholder="Event Title" required>
-                            <input type="text" name="description" placeholder="Description" required>
-                            <input type="date" name="date" required>
+                            <input type="text" id="eName" name="name" placeholder="Event Name" required>
+                            <input type="text" id="eLocation" name="location" placeholder="Location" required>
+                            <input type="text" id="eDate" name="date" placeholder="Dates" required>
+                            <input type="text" id="eHours" name="hours" placeholder="Hours" required>
                             <button type="submit">Add Event</button>
                         </form>
                     <h2>Edit Event</h2>
-                        <form id="updateEvent">
-                            <select id="eventSelector" onchange="populateEventFields(this.value)">
-                                <!-- Options populated dynamically -->
-                            </select>
-                            <input type="text" name="title" placeholder="Event Title">
-                            <input type="text" name="description" placeholder="Description" required>
-                            <input type="date" name="date">
+                        <form id="updateEvents">
+                            <select id="eventSelector"></select>
+                            <input type="text" id="editEventName" name="name" placeholder="Event Name" required>
+                            <input type="text" id="editLocation" name="location" placeholder="Location" required>
+                            <input type="text" id="editDate" name="date" placeholder="Dates" required>
+                            <input type="text" id="editHours" name="hours" placeholder="Hours" required>
                             <button type="submit">Update Event</button>
                         </form>
                     <h2>Delete Event</h2>
-                        <form id="deleteEvent">
-                            <select name="id">
-                                <!-- Options populated dynamically -->
-                            </select>
-                            <button type="submit">Delete Event</button>
-                        </form>
+                        <div id="eventItems">
+                        <ul>
+                        </ul>
                 </div>
             </section>
             <footer>

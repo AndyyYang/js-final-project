@@ -9,7 +9,7 @@ router.get('/', async (_, response) => {
     const event = await collection.find().toArray()
 
     //Need to map event array to print out only id (_id in MongoDB) and name
-    const result = event.map(({ _id, name}) => ({_id, name}));
+    const result = event.map(({ _id, name}) => ({ _id, name }));
 
 	response.json(result)
 })
