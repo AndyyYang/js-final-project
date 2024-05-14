@@ -2,15 +2,15 @@ document.getElementById('addEvent').addEventListener('submit', async () => {
 
     const newEventName = document.getElementById('eName').value
     const newEventLocation = document.getElementById('eLocation').value
-    const newEventDate = document.getElementById('eDate').value
+    const newEventDate = document.getElementById('eDates').value
     const newEventHours = document.getElementById('eHours').value
 
-    console.log('Date:', newEventDate)
+    console.log('Dates:', newEventDate)
 
     const newEvent = {
         name: newEventName,
         location: newEventLocation,
-        date: newEventDate,
+        dates: newEventDate,
         hours: newEventHours
     }
 

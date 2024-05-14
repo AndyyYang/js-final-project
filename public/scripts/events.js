@@ -45,7 +45,7 @@ const fetchEventDetails = async (eventId, eventElement) => {
         detailsDiv.appendChild(location);
 
         const date = document.createElement('p')
-        date.textContent = `Date: ${details.date}`
+        date.textContent = `Dates: ${details.dates}`
         detailsDiv.appendChild(date)
 
         const hours = document.createElement('p')

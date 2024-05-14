@@ -26,7 +26,7 @@ const populateEventFormFields = async (eventId) => {
     const event = await response.json()
     document.getElementById('editEventName').value = event.name
     document.getElementById('editLocation').value = event.location
-    document.getElementById('editDate').value = event.date
+    document.getElementById('editDates').value = event.dates
     document.getElementById('editHours').value = event.hours
 }
 
@@ -38,7 +38,7 @@ const setupEventFormListener = () => {
         const updatedEvent = {
             name: document.getElementById('editEventName').value,
             location: document.getElementById('editLocation').value,
-            date: document.getElementById('editDate').value,
+            dates: document.getElementById('editDates').value,
             hours: document.getElementById('editHours').value
         }
 
